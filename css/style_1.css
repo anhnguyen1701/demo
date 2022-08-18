@@ -1752,9 +1752,10 @@ body.dark .member-social ul li a{
 ---------------------------------------------------------------------------*/
 .faq-tabs ul.faq-tabs-btns li a {
     display: block;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     padding-left: 15px;
+    padding-right: 15px;
     position: relative;
 
     -webkit-border-radius: 6px;
@@ -4095,7 +4096,8 @@ line-height: 36px;
 
 /*-------------------------------------------------------------------------*/
 @media only screen and (max-width: 767px) {
-
+    .faq-tabs ul.faq-tabs-btns li {line-height: unset;}
+    .faq-tabs ul.faq-tabs-btns li a {padding-top: 20px;padding-bottom: 20px;}
     .container { width: 570px; }
 
     .left .feature-box-style-1:first-child { margin-top: 100px; }
@@ -4115,7 +4117,7 @@ line-height: 36px;
     #team-section .ui-slider-tabs-list li { margin-left: 15px; }
     #team-section .member-image { margin-bottom: 50px; }
 
-    .section-title h1 { font-size: 50px!important; }
+    .section-title h1 { font-size: 50px; }
 
     .faq-tabs ul.faq-tabs-btns { width: 100%; }
     .faq-tabs .col-md-6 { overflow: hidden; }

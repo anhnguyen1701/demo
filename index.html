@@ -311,7 +311,6 @@
     <link rel="stylesheet" id="sliderTabs-css" href="css/jquery.sliderTabs.min.css" type="text/css" media="all">
     <link rel="stylesheet" id="carousel-css" href="css/owl.carousel.css" type="text/css" media="all">
     <link rel="stylesheet" id="style_supersized-css" href="css/style.css" type="text/css" media="all">
-    <link rel="stylesheet" id="theme-style-css" href="css/style_1.css" type="text/css" media="all">
     <link rel="stylesheet" id="js_composer_front-css" href="css/js_composer_front_custom.css" type="text/css"
         media="all">
     <script type="text/javascript" src="js/jquery.min.js" id="jquery-core-js"></script>
@@ -430,10 +429,8 @@
             background-color: #dc143c;
         }
 
-        .ui-slider-tabs-list li.selected a,
-        {
-        color: #dc143c;
-
+        .ui-slider-tabs-list li.selected a {
+            color: #dc143c;
         }
 
         .faq-tabs ul.faq-tabs-btns li a:hover,
@@ -468,13 +465,12 @@
         .mini-post .post-title a:hover {
             color: #dc143c;
         }
-        }
 
         .faq-tabs ul.faq-tabs-btns li a:hover,
         .faq-tabs ul.faq-tabs-btns li a:focus,
         .faq-tabs ul.faq-tabs-btns li a.active {
             background-color: #dc143c;
-            border: #dc143c;
+            border: 1px solid #dc143c;
         }
 
         #team-section .ui-slider-tabs-list li a::after,
@@ -490,8 +486,7 @@
         .price-table:hover .table-price h1,
         .mini-post .post-title a:hover,
         .post .post-title a:hover,
-        /*.post .post-author:hover a*/
-        ,
+        .post .post-author:hover a,
         .post .post-comment:hover a,
         .post .post-views:hover a,
         .post .post-author:hover::after,
@@ -818,6 +813,20 @@
         }
     </style>
     <style type="text/css">
+        @media(min-width: 768px) {
+            .faqcontent-323 {
+                margin-top: 50px;
+            }
+
+            .faqcontent-324 {
+                margin-top: 150px;
+            }
+
+            .faqcontent-325 {
+                margin-top: 200px;
+            }
+        }
+
         .recentcomments a {
             display: inline !important;
             padding: 0 !important;
@@ -998,6 +1007,7 @@
             }
         </style>
     </noscript>
+    <link rel="stylesheet" id="theme-style-css" href="css/style_1.css" type="text/css" media="all">
 </head>
 
 <body
@@ -1150,8 +1160,8 @@
                             <ul id="menu-one-page-menu" class="scrollto">
                                 <li id="menu-item-38"
                                     class="scrollto icon_home home menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-38">
-                                    <a title="Home" href="http://demo.ovathemes.com/appon/" class="scrollto"
-                                        data-placement="left" data-rel="tooltip">Home</a>
+                                    <a title="Trang chủ" href="#" class="scrollto" data-placement="left"
+                                        data-rel="tooltip">Trang chủ</a>
                                 </li>
                                 <li id="menu-item-9"
                                     class="scrollto menu-item menu-item-type-custom menu-item-object-custom menu-item-9">
@@ -1160,43 +1170,38 @@
                                 </li>
                                 <li id="menu-item-10"
                                     class="scrollto menu-item menu-item-type-custom menu-item-object-custom menu-item-10">
-                                    <a title="How It Works" href="#works-section" class="scrollto" data-placement="left"
-                                        data-rel="tooltip">How It Works</a>
+                                    <a title="Lắp đặt" href="#works-section" class="scrollto" data-placement="left"
+                                        data-rel="tooltip">Lắp đặt</a>
                                 </li>
                                 <li id="menu-item-11"
                                     class="scrollto menu-item menu-item-type-custom menu-item-object-custom menu-item-11">
-                                    <a title="Screenshots" href="#portfolio-section" class="scrollto"
-                                        data-placement="left" data-rel="tooltip">Screenshots</a>
+                                    <a title="Hình ảnh" href="#portfolio-section" class="scrollto" data-placement="left"
+                                        data-rel="tooltip">Hình ảnh</a>
                                 </li>
                                 <li id="menu-item-12"
                                     class="scrollto menu-item menu-item-type-custom menu-item-object-custom menu-item-12">
-                                    <a title="APP View" href="#closer-section" class="scrollto" data-placement="left"
-                                        data-rel="tooltip">APP View</a>
+                                    <a title="Hãng xe" href="#moreapps-section" class="scrollto" data-placement="left"
+                                        data-rel="tooltip">Hãng xe</a>
                                 </li>
                                 <li id="menu-item-13"
                                     class="scrollto menu-item menu-item-type-custom menu-item-object-custom menu-item-13">
-                                    <a title="Team" href="#team-section" class="scrollto" data-placement="left"
-                                        data-rel="tooltip">Team</a>
+                                    <a title="Câu hỏi thường gặp" href="#faq-section" class="scrollto"
+                                        data-placement="left" data-rel="tooltip">Câu hỏi thường gặp</a>
                                 </li>
                                 <li id="menu-item-15"
                                     class="scrollto menu-item menu-item-type-custom menu-item-object-custom menu-item-15">
-                                    <a title="Faqs" href="#faq-section" class="scrollto" data-placement="left"
-                                        data-rel="tooltip">Faqs</a>
+                                    <a title="Feedback" href="#clients" class="scrollto" data-placement="left"
+                                        data-rel="tooltip">Feedback</a>
                                 </li>
                                 <li id="menu-item-17"
                                     class="scrollto menu-item menu-item-type-custom menu-item-object-custom menu-item-17">
-                                    <a title="Pricing Tables" href="#price-section" class="scrollto"
-                                        data-placement="left" data-rel="tooltip">Pricing Tables</a>
+                                    <a title="Giá thành" href="#price-section" class="scrollto" data-placement="left"
+                                        data-rel="tooltip">Giá thành</a>
                                 </li>
                                 <li id="menu-item-18"
                                     class="scrollto menu-item menu-item-type-custom menu-item-object-custom menu-item-18">
-                                    <a title="Recent Posts" href="#recent-section" class="scrollto"
-                                        data-placement="left" data-rel="tooltip">Recent Posts</a>
-                                </li>
-                                <li id="menu-item-19"
-                                    class="scrollto menu-item menu-item-type-custom menu-item-object-custom menu-item-19">
-                                    <a title="Contact Us" href="#reach-section" class="scrollto" data-placement="left"
-                                        data-rel="tooltip">Contact Us</a>
+                                    <a title="Liên hệ" href="#reach-section" class="scrollto" data-placement="left"
+                                        data-rel="tooltip">Liên hệ</a>
                                 </li>
                             </ul>
                         </div>
@@ -1874,70 +1879,101 @@
         </div>
     </div>
     </div>
-    <div class="row">
-        <div class="wpb_column vc_column_container vc_col-sm-12">
+    <div class="vc_row wpb_row vc_row-fluid vc_custom_1436179568084">
+        <div class=" wpb_column vc_column_container vc_col-sm-12">
             <div class="vc_column-inner">
                 <div class="wpb_wrapper">
-                    <div class="heading">
-                        <div class="section-title"
-                            data-uk-scrollspy="{cls:'uk-animation-slide-top', delay:300, repeat: false}">
-                            <h1>More APPs</h1>
-                        </div>
+                    <section class="arrows-section"><a href="#moreapps-section" class="scrollto">
+                            <i class="fa fa-angle-down"></i>
+                        </a><a href="#portfolio-section" class="scrollto">
+                            <i class="fa fa-angle-up"></i>
+                        </a></section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="moreapps-section" class="vc_row wpb_row vc_row-fluid vc_custom_1436179561035">
+        <div class="container">
+            <div class="row">
+                <div class="wpb_column vc_column_container vc_col-sm-12">
+                    <div class="vc_column-inner">
+                        <div class="wpb_wrapper">
+                            <div class="heading">
+                                <div class="section-title"
+                                    data-uk-scrollspy="{cls:'uk-animation-slide-top', delay:500, repeat: false}">
+                                    <h1 style="font-size: 60px">Hãng xe liên quan</h1>
+                                </div>
 
-                        <div class="section-desc"
-                            data-uk-scrollspy="{cls:'uk-animation-fade', delay:500, repeat: false}">
-                            <p style=" font-size: 18px">Duis bibendum diam non erat facilaisis
-                                tincidunt. Fusce leo neque, lacinia at tempor vitae, porta at arcu.
-                                Vestibulum varius non dui at pulvinar. Ut egestas orci in quam sollicitudin
-                                aliquet.</p>
+                                <div class="section-desc"
+                                    data-uk-scrollspy="{cls:'uk-animation-fade', delay:700, repeat: false}">
+                                    <p style="font-size: 18px">Duis bibendum diam non erat facilaisis
+                                        tincidunt. Fusce leo neque, lacinia at tempor vitae, porta at arcu.
+                                        Vestibulum varius non dui at pulvinar. Ut egestas orci in quam sollicitudin
+                                        aliquet.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="wpb_column vc_column_container vc_col-sm-12">
-            <div class="vc_column-inner">
-                <div class="wpb_wrapper">
-                    <div id="owl-apps" data-pagination="false" data-autoplay="3000" data-carousel_columns="6">
-                        <div class="app-logo">
-                            <a href="#" title="title"><img src="images/008.png" alt="alt">
-                            </a>
-                        </div>
-                        <div class="app-logo">
-                            <a href="#" title="title"><img src="images/007.png" alt="alt">
-                            </a>
-                        </div>
-                        <div class="app-logo">
-                            <a href="#" title="title"><img src="images/006.png" alt="alt">
-                            </a>
-                        </div>
-                        <div class="app-logo">
-                            <a href="#" title="title"><img src="images/005.png" alt="alt">
-                            </a>
-                        </div>
-                        <div class="app-logo">
-                            <a href="#" title="title"><img src="images/0042.png" alt="alt">
-                            </a>
-                        </div>
-                        <div class="app-logo">
-                            <a href="#" title="title"><img src="images/0032.png" alt="alt">
-                            </a>
-                        </div>
-                        <div class="app-logo">
-                            <a href="#" title="title"><img src="images/0022.png" alt="alt">
-                            </a>
-                        </div>
-                        <div class="app-logo">
-                            <a href="#" title="title"><img src="images/0012.png" alt="alt">
-                            </a>
+                <div class="wpb_column vc_column_container vc_col-sm-12">
+                    <div class="vc_column-inner">
+                        <div class="wpb_wrapper">
+                            <div id="owl-apps" data-pagination="false" data-autoplay="3000" data-carousel_columns="6">
+                                <div class="app-logo">
+                                    <a href="#" title="title"><img
+                                            src="http://demo.ovathemes.com/appon/wp-content/uploads/2015/06/008.png"
+                                            alt="alt" />
+                                    </a>
+                                </div>
+                                <div class="app-logo">
+                                    <a href="#" title="title"><img
+                                            src="http://demo.ovathemes.com/appon/wp-content/uploads/2015/06/007.png"
+                                            alt="alt" />
+                                    </a>
+                                </div>
+                                <div class="app-logo">
+                                    <a href="#" title="title"><img
+                                            src="http://demo.ovathemes.com/appon/wp-content/uploads/2015/06/006.png"
+                                            alt="alt" />
+                                    </a>
+                                </div>
+                                <div class="app-logo">
+                                    <a href="#" title="title"><img
+                                            src="http://demo.ovathemes.com/appon/wp-content/uploads/2015/06/005.png"
+                                            alt="alt" />
+                                    </a>
+                                </div>
+                                <div class="app-logo">
+                                    <a href="#" title="title"><img
+                                            src="http://demo.ovathemes.com/appon/wp-content/uploads/2015/06/0042.png"
+                                            alt="alt" />
+                                    </a>
+                                </div>
+                                <div class="app-logo">
+                                    <a href="#" title="title"><img
+                                            src="http://demo.ovathemes.com/appon/wp-content/uploads/2015/06/0032.png"
+                                            alt="alt" />
+                                    </a>
+                                </div>
+                                <div class="app-logo">
+                                    <a href="#" title="title"><img
+                                            src="http://demo.ovathemes.com/appon/wp-content/uploads/2015/06/0022.png"
+                                            alt="alt" />
+                                    </a>
+                                </div>
+                                <div class="app-logo">
+                                    <a href="#" title="title"><img
+                                            src="http://demo.ovathemes.com/appon/wp-content/uploads/2015/06/0012.png"
+                                            alt="alt" />
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    </div>
-    </div> -->
     <div class="vc_row wpb_row vc_row-fluid vc_custom_1436179568084" ">
             <div class=" wpb_column vc_column_container vc_col-sm-12">
         <div class="vc_column-inner">
@@ -1980,207 +2016,132 @@
                         <div class="faq-tabs">
                             <ul class="faq-tabs-btns">
                                 <li>
-                                    <a class="active " href="#321" title="Địa chỉ của công ty?" data-idfirst="321">
-                                        Địa chỉ của công ty?
+                                    <a href="#321" title="Tôi muốn mua hàng phải làm sao?">
+                                        Tôi muốn mua hàng phải làm sao?
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#322" title="How to Make New User ?">
-                                        How to Make New User ?
+                                    <a href="#322" title="Tôi ở xa có mua hàng được không? Shop có giao hàng không?">
+                                        Tôi ở xa có mua hàng được không? Shop có giao hàng không?
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#323" title="How to Earn Bitcoin ?">
-                                        How to Earn Bitcoin ?
+                                    <a href="#323" title="Shop bán sản phẩm của các dòng xe nào?">
+                                        Shop bán sản phẩm của các dòng xe nào?
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#324" title="How to Delete My Profile ?">
-                                        How to Delete My Profile ?
+                                    <a href="#324"
+                                        title="Tôi không biết chọn sản phẩm như thế nào phù hợp với xe của mình?">
+                                        Tôi không biết chọn sản phẩm như thế nào phù hợp với xe của mình?
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#325"
+                                        title="Sao tôi có thể tin tưởng khi chuyển tiền rồi, tôi sẽ nhận được hàng?">
+                                        Sao tôi có thể tin tưởng khi chuyển tiền rồi, tôi sẽ nhận được hàng?
                                     </a>
                                 </li>
                             </ul>
                             <div class="hide_first col-md-6">
                                 <div id="321Containt" class="faqcontent">
-                                    <div class="vc_row wpb_row vc_row-fluid" ">
-                                                <div class=" wpb_column vc_column_container vc_col-sm-12">
-                                        <div class="vc_column-inner">
-                                            <div class="wpb_wrapper">
-                                                <div class="content-desc">
-                                                    <h3>Địa chỉ: </h3>
-                                                    <p>Số 47A - Phố Lạc Nghiệp - Phường Thanh Nhàn - Quận Hai
-                                                        Bà Trưng - Hà Nội</p>
+                                    <div class="vc_row wpb_row vc_row-fluid">
+                                        <div class="wpb_column vc_column_container vc_col-sm-12">
+                                            <div class="vc_column-inner">
+                                                <div class="wpb_wrapper">
+                                                    <div class="content-desc">
+                                                        <h3>Mua hàng:</h3>
+                                                        <p>Khi bạn muốn mua một mặt hàng tại đây, bạn có thể đến shop
+                                                            mua trực tiếp, gọi điện cho chúng tôi hoặc đặt hàng trên
+                                                            website.</p>
+                                                    </div>
+                                                    <div class="vc_empty_space" style="height: 20px"><span
+                                                            class="vc_empty_space_inner"></span></div>
                                                 </div>
-                                                <div class="vc_empty_space" style="height: 20px"><span
-                                                        class="vc_empty_space_inner"></span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="322Containt" class="faqcontent" style="display: none;">
+                                    <div class="vc_row wpb_row vc_row-fluid">
+                                        <div class="wpb_column vc_column_container vc_col-sm-12">
+                                            <div class="vc_column-inner">
+                                                <div class="wpb_wrapper">
+                                                    <div class="content-desc">
+                                                        <h3>Giao hàng:</h3>
+                                                        <p>Chúng tôi giao hàng và thu tiền tận nơi trên toàn quốc, miễn
+                                                            phí giao hang nội thành cho hóa đơn từ 05 triệu đồng trở
+                                                            lên, nên các bạn yên tâm thoải mái mua hàng nhé!</p>
+                                                    </div>
+                                                    <div class="vc_empty_space" style="height: 20px"><span
+                                                            class="vc_empty_space_inner"></span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="323Containt" class="faqcontent faqcontent-323" style="display: none;">
+                                    <div class="vc_row wpb_row vc_row-fluid">
+                                        <div class="wpb_column vc_column_container vc_col-sm-12">
+                                            <div class="vc_column-inner">
+                                                <div class="wpb_wrapper">
+                                                    <div class="content-desc">
+                                                        <h3>Sản phẩm:</h3>
+                                                        <p>Shop chủ yếu kinh doanh sản phẩm của các dòng xe sang hiện có
+                                                            trên thị trường Việt Nam (Mercedes-Benz, BMW, Audi, Land
+                                                            Rover, Jaguar, Lamborghini,...) </p>
+                                                    </div>
+                                                    <div class="vc_empty_space" style="height: 20px"><span
+                                                            class="vc_empty_space_inner"></span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="324Containt" class="faqcontent faqcontent-324" style="display: none;">
+                                    <div class="vc_row wpb_row vc_row-fluid">
+                                        <div class="wpb_column vc_column_container vc_col-sm-12">
+                                            <div class="vc_column-inner">
+                                                <div class="wpb_wrapper">
+                                                    <div class="content-desc">
+                                                        <h3>Lựa chọn:</h3>
+                                                        <p>Nếu bạn băn khoăn không biết chọn sản phẩm nào phù hợp với
+                                                            dòng xe, đời xe thì hãy liên hệ trực tiếp bằng hoặc gọi
+                                                            điện, nhắn tin cho cửa hang để được hỗ trợ tốt nhất nhé!</p>
+                                                    </div>
+                                                    <div class="vc_empty_space" style="height: 20px"><span
+                                                            class="vc_empty_space_inner"></span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="325Containt" class="faqcontent faqcontent-325" style="display: none;">
+                                    <div class="vc_row wpb_row vc_row-fluid">
+                                        <div class="wpb_column vc_column_container vc_col-sm-12">
+                                            <div class="vc_column-inner">
+                                                <div class="wpb_wrapper">
+                                                    <div class="content-desc">
+                                                        <h3>Uy tín:</h3>
+                                                        <p>Khác với một số shop chỉ bán hàng trôi nổi trên mạng không rõ
+                                                            địa chỉ, chúng tôi là một hệ thống cửa hàng có địa chỉ rõ
+                                                            ràng cụ thể được đăng tải trên website của shop. Đặc biệt
+                                                            chúng tôi sử dụng dịch vụ giao hàng và thu tiền tại nhà, khi
+                                                            nào khách hàng nhận được hàng thì mới thanh toán, nên rủi ro
+                                                            là 0%. Uy tín và đảm bảo chất lượng hàng hoá cũng như lợi
+                                                            ích của khách hàng luôn là tiêu chí hàng đầu của chúng tôi.
+                                                        </p>
+                                                    </div>
+                                                    <div class="vc_empty_space" style="height: 20px"><span
+                                                            class="vc_empty_space_inner"></span></div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div id="322Containt" class="faqcontent">
-                                <div class="vc_row wpb_row vc_row-fluid" ">
-                                                <div class=" wpb_column vc_column_container vc_col-sm-12">
-                                    <div class="vc_column-inner">
-                                        <div class="wpb_wrapper">
-                                            <div class="content-desc">
-                                                <h3>How to Make New User ?</h3>
-                                                <p>Vestibulum sit amet tincidunt urna, eget ullamcorper
-                                                    purus. Aenean feugiat quis tortor vitae frin,
-                                                    condimentum at sem et, fermentum varius ligula.
-                                                    Nulla dignissim nulla eget congue cursus.</p>
-                                            </div>
-                                            <div class="vc_empty_space" style="height: 20px"><span
-                                                    class="vc_empty_space_inner"></span></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-12">
-                                    <div class="vc_column-inner">
-                                        <div class="wpb_wrapper">
-                                            <ul class="mini-feature-list">
-                                                <li><i class="fa fa-check-circle-o"></i>First Awesome
-                                                    Feature</li>
-                                                <li><i class="fa fa-check-circle-o"></i>First Awesome
-                                                    Feature</li>
-                                                <li><i class="fa fa-check-circle-o"></i>First Awesome
-                                                    Feature</li>
-                                                <li><i class="fa fa-check-circle-o"></i>First Awesome
-                                                    Feature</li>
-                                            </ul>
-                                            <div class="vc_empty_space" style="height: 15px"><span
-                                                    class="vc_empty_space_inner"></span></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-12">
-                                    <div class="vc_column-inner">
-                                        <div class="wpb_wrapper">
-                                            <ul class="mini-feature-list">
-                                                <li><i class="fa fa-check-circle-o"></i>First Awesome
-                                                    Feature</li>
-                                                <li><i class="fa fa-check-circle-o"></i>First Awesome
-                                                    Feature</li>
-                                                <li><i class="fa fa-check-circle-o"></i>First Awesome
-                                                    Feature</li>
-                                                <li><i class="fa fa-check-circle-o"></i>First Awesome
-                                                    Feature</li>
-                                            </ul>
-                                            <div class="vc_empty_space" style="height: 15px"><span
-                                                    class="vc_empty_space_inner"></span></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
-                        <div id="323Containt" class="faqcontent">
-                            <div class="vc_row wpb_row vc_row-fluid" ">
-                                                <div class=" wpb_column vc_column_container vc_col-sm-12">
-                                <div class="vc_column-inner">
-                                    <div class="wpb_wrapper">
-                                        <div class="content-desc">
-                                            <h3>How to Earn Bitcoin ?</h3>
-                                            <p>Vestibulum sit amet tincidunt urna, eget ullamcorper
-                                                purus. Aenean feugiat quis tortor vitae frin,
-                                                condimentum at sem et, fermentum varius ligula.
-                                                Nulla dignissim nulla eget congue cursus.</p>
-                                        </div>
-                                        <div class="vc_empty_space" style="height: 20px"><span
-                                                class="vc_empty_space_inner"></span></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-12">
-                                <div class="vc_column-inner">
-                                    <div class="wpb_wrapper">
-                                        <ul class="mini-feature-list">
-                                            <li><i class="fa fa-check-circle-o"></i>First Awesome
-                                                Feature</li>
-                                            <li><i class="fa fa-check-circle-o"></i>First Awesome
-                                                Feature</li>
-                                            <li><i class="fa fa-check-circle-o"></i>First Awesome
-                                                Feature</li>
-                                            <li><i class="fa fa-check-circle-o"></i>First Awesome
-                                                Feature</li>
-                                        </ul>
-                                        <div class="vc_empty_space" style="height: 15px"><span
-                                                class="vc_empty_space_inner"></span></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-12">
-                                <div class="vc_column-inner">
-                                    <div class="wpb_wrapper">
-                                        <ul class="mini-feature-list">
-                                            <li><i class="fa fa-check-circle-o"></i>First Awesome
-                                                Feature</li>
-                                            <li><i class="fa fa-check-circle-o"></i>First Awesome
-                                                Feature</li>
-                                            <li><i class="fa fa-check-circle-o"></i>First Awesome
-                                                Feature</li>
-                                            <li><i class="fa fa-check-circle-o"></i>First Awesome
-                                                Feature</li>
-                                        </ul>
-                                        <div class="vc_empty_space" style="height: 15px"><span
-                                                class="vc_empty_space_inner"></span></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="324Containt" class="faqcontent">
-                        <div class="vc_row wpb_row vc_row-fluid" ">
-                                                <div class=" wpb_column vc_column_container vc_col-sm-12">
-                            <div class="vc_column-inner">
-                                <div class="wpb_wrapper">
-                                    <div class="content-desc">
-                                        <h3>How to Delete My Profile ?</h3>
-                                        <p>Vestibulum sit amet tincidunt urna, eget ullamcorper
-                                            purus. Aenean feugiat quis tortor vitae frin,
-                                            condimentum at sem et, fermentum varius ligula.
-                                            Nulla dignissim nulla eget congue cursus.</p>
-                                    </div>
-                                    <div class="vc_empty_space" style="height: 20px"><span
-                                            class="vc_empty_space_inner"></span></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-12">
-                            <div class="vc_column-inner">
-                                <div class="wpb_wrapper">
-                                    <ul class="mini-feature-list">
-                                        <li><i class="fa fa-check-circle-o"></i>First Awesome
-                                            Feature</li>
-                                        <li><i class="fa fa-check-circle-o"></i>First Awesome
-                                            Feature</li>
-                                        <li><i class="fa fa-check-circle-o"></i>First Awesome
-                                            Feature</li>
-                                        <li><i class="fa fa-check-circle-o"></i>First Awesome
-                                            Feature</li>
-                                    </ul>
-                                    <div class="vc_empty_space" style="height: 15px"><span
-                                            class="vc_empty_space_inner"></span></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-12">
-                            <div class="vc_column-inner">
-                                <div class="wpb_wrapper">
-                                    <ul class="mini-feature-list">
-                                        <li><i class="fa fa-check-circle-o"></i>First Awesome
-                                            Feature</li>
-                                        <li><i class="fa fa-check-circle-o"></i>First Awesome
-                                            Feature</li>
-                                        <li><i class="fa fa-check-circle-o"></i>First Awesome
-                                            Feature</li>
-                                        <li><i class="fa fa-check-circle-o"></i>First Awesome
-                                            Feature</li>
-                                    </ul>
-                                    <div class="vc_empty_space" style="height: 15px"><span
-                                            class="vc_empty_space_inner"></span></div>
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
             </div>
@@ -2188,17 +2149,6 @@
     </div>
     </div>
     </div>
-    <div class="wpb_column vc_column_container vc_col-sm-12">
-        <div class="vc_column-inner">
-            <div class="wpb_wrapper">
-                <div class="lets-see-btn feature-btns">
-                    <div class="lets-see-btn buttons"
-                        data-uk-scrollspy="{cls:'uk-animation-slide-bottom', delay:1100, repeat: false}">
-                        <a class="btn btn-lg btn-nesto" href="#">Open A Ticket</a>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
     </div>
     </div>
@@ -2511,7 +2461,7 @@
             <div class="wpb_wrapper">
                 <section class="arrows-section"><a href="#reach-section" class="scrollto">
                         <i class="fa fa-angle-down"></i>
-                    </a><a href="#recent-section" class="scrollto">
+                    </a><a href="#price-section" class="scrollto">
                         <i class="fa fa-angle-up"></i>
                     </a></section>
             </div>
